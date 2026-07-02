@@ -1,0 +1,50 @@
+/* Reset browser defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7fb;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Main content */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+/* Header */
+h1 {
+    color: #232f3e;
+    margin-bottom: 15px;
+    border-bottom: 4px solid #ff9900;
+    padding-bottom: 10px;
+}
+
+/* Section titles */
+h2 {
+    color: #232f3e;
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
+/* Paragraph spacing */
+p {
+    margin-bottom: 15px;
+}
+
+/* Lists */
+ul {
+    margin-left: 25px;
+}
+
+li {
+    margin-bottom: 8px;
+}
