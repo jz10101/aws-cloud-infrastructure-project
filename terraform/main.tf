@@ -90,7 +90,7 @@ data "aws_ami" "amazon_linux" {
 
   filter {
     name   = "name"
-    values = ["al2023-ami-*-x86_64"]
+    values = ["al2023-ami-2023.*-kernel-6.1-x86_64"]
   }
 }
 
@@ -103,26 +103,12 @@ resource "aws_instance" "web" {
   associate_public_ip_address = true
   key_name                    = var.key_name
 
-  user_data = <<-EOF
-              #!/bin/bash
-
-              dnf update -y
-
-              dnf install docker -y
-
-              systemctl enable docker
-              systemctl start docker
-
-              usermod -aG docker ec2-user
-
-              docker run -d \
-                --name web \
-                -p 80:80 \
-                nginx
-              EOF
 
   tags = {
     Name        = "${var.project_name}-web-server"
     Environment = var.environment
   }
 }
+
+
+
