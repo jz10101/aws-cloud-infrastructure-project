@@ -1,45 +1,115 @@
 # AWS Cloud Infrastructure Project
 
-## Project Overview
+## Architecture Diagram
 
-This project demonstrates how to design, deploy, and manage production-style cloud infrastructure on Amazon Web Services (AWS) using Infrastructure as Code (IaC).
+![Architecture Diagram](docs/architecture-diagram.png)
 
-The infrastructure is built with Terraform and includes networking, compute, storage, identity management, monitoring, and containerization technologies commonly used by Cloud Engineers, DevOps Engineers, and Systems Engineers.
+## Live Demo
 
-The objective of this project is to showcase practical cloud engineering skills by deploying a secure, scalable, and automated infrastructure environment while following industry best practices.
+**Application URL**
+
+http://3.236.135.37
+
+**Current Status**
+
+✅ Running on Amazon EC2
+
+**Cloud Region**
+
+us-east-1
+
+---
+
+# Project Overview
+
+This project demonstrates how to design, deploy, and manage a production-style cloud infrastructure environment on Amazon Web Services (AWS) using Infrastructure as Code (IaC).
+
+The infrastructure is fully automated using Terraform and includes networking, compute, storage, identity and access management, monitoring, and containerization technologies commonly used by Cloud Engineers, DevOps Engineers, Cloud Administrators, and Systems Engineers.
+
+The objective of this project is to showcase practical cloud engineering skills by deploying a secure, scalable, and automated cloud environment while following industry best practices.
 
 ---
 
 # Project Objectives
 
 - Build AWS infrastructure using Terraform
-- Automate infrastructure deployment with Infrastructure as Code (IaC)
-- Deploy a Dockerized web application to an EC2 instance
-- Configure secure networking and access controls
-- Implement monitoring with Amazon CloudWatch
-- Store application assets using Amazon S3
-- Manage permissions using AWS IAM
+- Deploy a Dockerized web application
+- Configure Amazon VPC networking
+- Launch an EC2 web server
+- Configure IAM Roles and Policies
+- Create an Amazon S3 Bucket
+- Implement CloudWatch monitoring
+- Practice Infrastructure as Code (IaC)
 - Demonstrate Git and GitHub version control
-- Document the complete deployment process
+- Produce professional cloud documentation
 
 ---
 
-# Planned Architecture
+# Architecture
 
-The final environment will include:
+Current infrastructure includes:
 
 - Amazon VPC
 - Public Subnet
 - Internet Gateway
 - Route Table
-- Security Groups
+- Security Group
 - Amazon EC2 Instance
-- Docker Engine
+- Docker Container
 - Nginx Web Server
 - Amazon S3 Bucket
-- IAM Role & Instance Profile
-- Amazon CloudWatch
-- Terraform Infrastructure
+- IAM Role
+- IAM Policy
+- IAM Instance Profile
+- Amazon CloudWatch Dashboard
+
+**Architecture Diagram**
+
+(Will be added after project completion.)
+
+---
+
+# Infrastructure Components
+
+## Amazon VPC
+
+Provides an isolated virtual network where AWS resources are deployed.
+
+## Public Subnet
+
+Hosts the EC2 web server.
+
+## Internet Gateway
+
+Allows internet communication with resources inside the VPC.
+
+## Route Table
+
+Routes internet traffic between the subnet and Internet Gateway.
+
+## Security Group
+
+Acts as the virtual firewall controlling inbound and outbound traffic.
+
+## Amazon EC2
+
+Runs the Docker container that hosts the website.
+
+## Docker
+
+Containerizes the Nginx web application.
+
+## Amazon S3
+
+Provides scalable cloud storage.
+
+## IAM
+
+Allows AWS services to securely communicate without storing credentials.
+
+## CloudWatch
+
+Monitors infrastructure performance and CPU utilization.
 
 ---
 
@@ -65,9 +135,9 @@ The final environment will include:
 ## Networking
 
 - Amazon VPC
-- Subnets
-- Route Tables
+- Public Subnet
 - Internet Gateway
+- Route Tables
 - Security Groups
 
 ## Storage
@@ -84,7 +154,7 @@ The final environment will include:
 
 ## Operating System
 
-- Amazon Linux
+- Amazon Linux 2023
 
 ## Development Tools
 
@@ -94,97 +164,45 @@ The final environment will include:
 
 ---
 
+# Deployment Workflow
+
+The infrastructure deployment process follows these steps:
+
+1. Initialize Terraform
+2. Validate Terraform configuration
+3. Generate Terraform execution plan
+4. Deploy AWS infrastructure
+5. Configure IAM Roles and Policies
+6. Create Amazon S3 Bucket
+7. Launch EC2 Instance
+8. Deploy Docker container
+9. Configure CloudWatch Dashboard
+10. Verify deployed infrastructure
+
+---
+
 # Repository Structure
 
 ```text
 CloudProject/
-│
+
 ├── app/
 │   └── Dockerized web application
-│
+
 ├── docs/
 │   └── Project documentation
-│
+
 ├── terraform/
-│   └── Infrastructure as Code files
-│
-├── .gitignore
-│
-└── README.md
-```
+│   ├── provider.tf
+│   ├── versions.tf
+│   ├── variables.tf
+│   ├── terraform.tfvars
+│   ├── main.tf
+│   ├── iam.tf
+│   ├── monitoring.tf
+│   ├── outputs.tf
+│   └── Dockerfile
 
----
+├── README.md
 
-# Skills Demonstrated
-
-This project demonstrates experience with:
-
-- Cloud Infrastructure Design
-- Infrastructure as Code (IaC)
-- AWS Networking
-- Linux Administration
-- Docker Container Deployment
-- Identity and Access Management (IAM)
-- Cloud Storage
-- Monitoring and Logging
-- Version Control with Git
-- GitHub Repository Management
-- Technical Documentation
-- Infrastructure Automation
-- Disaster Recovery Concepts
-- Cloud Security Best Practices
-
----
-
-# Project Status
-
-**Current Status**
-
-- ✅ Project Initialized
-- ✅ Git Repository Created
-- ✅ GitHub Repository Created
-- ✅ Documentation Created
-
-**Upcoming Milestones**
-
-- Terraform Configuration
-- AWS Authentication
-- VPC Deployment
-- EC2 Deployment
-- Docker Installation
-- Website Deployment
-- S3 Integration
-- IAM Configuration
-- CloudWatch Monitoring
-- Final Documentation
-
----
-
-# Learning Outcomes
-
-This project is designed to demonstrate practical experience with cloud engineering concepts including:
-
-- Infrastructure automation
-- Cloud networking
-- Virtual machine deployment
-- Containerized applications
-- Security best practices
-- Monitoring and observability
-- Version control workflows
-- Cloud documentation
-
----
-
-# Final Goal
-
-By the completion of this project, the infrastructure will automatically deploy a production-style cloud environment where users can access a live Dockerized website hosted on an Amazon EC2 instance. The environment will be fully managed through Terraform, monitored with Amazon CloudWatch, and documented as a professional cloud engineering portfolio project.
-
----
-
-## Author
-
-**Jose Fernandez**
-
-Information Systems Graduate
-
-Cloud Computing • Cybersecurity • Infrastructure Automation • AWS
+└── .gitignore 
