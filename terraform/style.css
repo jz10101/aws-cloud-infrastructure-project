@@ -1,265 +1,285 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #eef3f8;
-    color: #1f2937;
-    line-height: 1.6;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #eef3f8;
+  color: #1f2937;
+  line-height: 1.6;
 }
 
 .page {
-    max-width: 1120px;
-    margin: 0 auto;
-    padding: 48px 24px;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 48px 24px;
 }
 
-/* --- Hero Section --- */
 .hero {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 28px;
-    align-items: stretch;
-    background: linear-gradient(135deg, #0f172a, #1e3a8a);
-    color: white;
-    border-radius: 24px;
-    padding: 48px;
-    box-shadow: 0 20px 45px rgba(15, 23, 42, 0.18);
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 28px;
+  align-items: stretch;
+  background: linear-gradient(135deg, #0f172a, #1e3a8a);
+  color: white;
+  border-radius: 24px;
+  padding: 48px;
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.18);
 }
 
 .eyebrow {
-    color: #f59e0b;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    font-size: 0.82rem;
-    margin-bottom: 12px;
+  color: #f59e0b;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 0.82rem;
+  margin-bottom: 12px;
 }
 
 .hero h1 {
-    font-size: 3rem;
-    line-height: 1.1;
-    margin-bottom: 18px;
+  font-size: 3rem;
+  line-height: 1.1;
+  margin-bottom: 18px;
 }
 
-.hero-text p {
-    font-size: 1.08rem;
-    color: #dbeafe;
-    max-width: 720px;
-}
-
-/* --- Badges & Skills Common Layout --- */
-.badges, .skills {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+.hero-description {
+  font-size: 1.08rem;
+  color: #dbeafe;
+  max-width: 720px;
 }
 
 .badges {
-    margin-top: 28px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 28px;
 }
 
-.badges span {
-    background: rgba(255, 255, 255, 0.12);
-    border: 1px solid rgba(255, 255, 255, 0.22);
-    color: white;
-    padding: 8px 14px;
-    border-radius: 999px;
-    font-size: 0.9rem;
-    font-weight: 600;
+.badges span,
+.skills span {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  color: white;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 600;
 }
 
-/* --- Live Deployment Card (Interactive) --- */
+.hero-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.hero-links a {
+  text-decoration: none;
+  background: #f59e0b;
+  color: #0f172a;
+  font-weight: 700;
+  padding: 10px 16px;
+  border-radius: 999px;
+  font-size: 0.92rem;
+  transition: 0.2s ease;
+}
+
+.hero-links a:hover {
+  background: white;
+  color: #0f172a;
+}
+
 .hero-card {
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 20px;
-    padding: 28px;
-    backdrop-filter: blur(10px);
-    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
-    cursor: pointer;
-}
-
-.hero-card:hover {
-    transform: translateY(-4px);
-    background: rgba(255, 255, 255, 0.15);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 28px;
+  backdrop-filter: blur(10px);
 }
 
 .hero-card h2 {
-    margin: 12px 0;
-    font-size: 1.4rem;
+  margin: 12px 0;
+  font-size: 1.4rem;
 }
 
 .hero-card p {
-    color: #dbeafe;
-    font-size: 0.95rem;
+  color: #dbeafe;
 }
 
 .live {
-    color: #22c55e !important;
-    font-weight: 700;
+  color: #22c55e !important;
+  font-weight: 700;
 }
 
-/* --- Generic Containers --- */
 .summary,
 .two-column,
 .process,
 .outcome {
-    background: white;
-    border-radius: 20px;
-    padding: 34px;
-    margin-top: 28px;
-    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+  background: white;
+  border-radius: 20px;
+  padding: 34px;
+  margin-top: 28px;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
 }
 
 .summary h2,
 .two-column h2,
 .process h2,
 .outcome h2 {
-    font-size: 1.6rem;
-    margin-bottom: 16px;
-    color: #0f172a;
+  font-size: 1.6rem;
+  margin-bottom: 16px;
+  color: #0f172a;
 }
 
 .summary p,
 .outcome p {
-    color: #4b5563;
-    font-size: 1rem;
+  color: #4b5563;
+  font-size: 1rem;
 }
 
-/* --- Features Grid Cards --- */
 .cards {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 18px;
-    margin-top: 28px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-top: 28px;
 }
 
 .card {
-    background: white;
-    border-radius: 18px;
-    padding: 26px;
-    border-top: 5px solid #f59e0b;
-    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+  background: white;
+  border-radius: 18px;
+  padding: 26px;
+  border-top: 5px solid #f59e0b;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+}
+
+.icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: #fff7ed;
+  color: #f59e0b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.25rem;
+  margin-bottom: 18px;
 }
 
 .card h3 {
-    color: #0f172a;
-    margin-bottom: 10px;
-    font-size: 1.12rem;
+  color: #0f172a;
+  margin-bottom: 10px;
+  font-size: 1.12rem;
 }
 
 .card p {
-    color: #4b5563;
-    font-size: 0.95rem;
+  color: #4b5563;
+  font-size: 0.95rem;
 }
 
-/* --- Two Column Layout --- */
 .two-column {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 34px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 34px;
 }
 
-.two-column ul {
-    list-style: none;
+ul {
+  list-style: none;
 }
 
-.two-column li {
-    padding: 9px 0;
-    color: #374151;
-    border-bottom: 1px solid #e5e7eb;
+li {
+  padding: 9px 0;
+  color: #374151;
+  border-bottom: 1px solid #e5e7eb;
 }
 
-.two-column li::before {
-    content: "✓";
-    color: #16a34a;
-    font-weight: bold;
-    margin-right: 10px;
+li::before {
+  content: "✓";
+  color: #16a34a;
+  font-weight: bold;
+  margin-right: 10px;
 }
 
-/* --- Professional Skill Tags --- */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
 .skills span {
-    background: #e0f2fe;
-    color: #075985;
-    border: 1px solid #bae6fd;
-    padding: 8px 16px;
-    border-radius: 999px;
-    font-size: 0.88rem;
-    font-weight: 600;
+  background: #e0f2fe;
+  color: #075985;
+  border: 1px solid #bae6fd;
+  margin-bottom: 6px;
 }
 
-/* --- Process Steps Timeline --- */
 .process {
-    position: relative;
+  position: relative;
 }
 
 .step {
-    display: grid;
-    grid-template-columns: 70px 1fr;
-    gap: 18px;
-    align-items: center;
-    padding: 18px 0;
-    border-bottom: 1px solid #e5e7eb;
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  gap: 18px;
+  align-items: center;
+  padding: 18px 0;
+  border-bottom: 1px solid #e5e7eb;
 }
 
 .step:last-child {
-    border-bottom: none;
+  border-bottom: none;
 }
 
 .step span {
-    background: #0f172a;
-    color: #f59e0b;
-    font-weight: 800;
-    border-radius: 14px;
-    padding: 12px;
-    text-align: center;
+  background: #0f172a;
+  color: #f59e0b;
+  font-weight: 800;
+  border-radius: 14px;
+  padding: 12px;
+  text-align: center;
 }
 
 .step p {
-    color: #374151;
+  color: #374151;
 }
 
-/* --- Project Outcome Block --- */
 .outcome {
-    background: linear-gradient(135deg, #ffffff, #eff6ff);
-    border-left: 6px solid #2563eb;
+  background: linear-gradient(135deg, #ffffff, #eff6ff);
+  border-left: 6px solid #2563eb;
 }
 
-/* --- Responsive Media Queries --- */
 @media (max-width: 900px) {
-    .hero,
-    .two-column {
-        grid-template-columns: 1fr;
-    }
-    
-    .cards {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    .hero h1 {
-        font-size: 2.4rem;
-    }
+  .hero,
+  .two-column {
+    grid-template-columns: 1fr;
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero h1 {
+    font-size: 2.4rem;
+  }
 }
 
 @media (max-width: 600px) {
-    .page {
-        padding: 24px 14px;
-    }
-    
-    .hero {
-        padding: 32px 24px;
-    }
-    
-    .cards {
-        grid-template-columns: 1fr;
-    }
-    
-    .hero h1 {
-        font-size: 2rem;
-    }
+  .page {
+    padding: 24px 14px;
+  }
+
+  .hero {
+    padding: 32px 24px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
 }

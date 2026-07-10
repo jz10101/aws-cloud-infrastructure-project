@@ -1,146 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AWS Cloud Infrastructure Project</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AWS Cloud Infrastructure Project</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <main class="page">
+  <main class="page">
 
-        <section class="hero">
-            <div class="hero-text">
-                <p class="eyebrow">AWS Cloud Portfolio Project</p>
-                <h1>AWS Cloud Infrastructure Project</h1>
-                <p>
-                    Production-style cloud infrastructure deployed with Terraform, Amazon EC2, 
-                    Linux, Docker, IAM, S3, and CloudWatch.
-                </p>
+    <section class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">AWS Cloud Portfolio Project</p>
+        <h1>AWS Cloud Infrastructure Project</h1>
 
-                <div class="badges">
-                    <span>Terraform</span>
-                    <span>AWS EC2</span>
-                    <span>Linux</span>
-                    <span>Docker</span>
-                    <span>CloudWatch</span>
-                </div>
-            </div>
+        <p class="hero-description">
+          Production-style AWS cloud infrastructure deployed using Terraform and Infrastructure as Code, featuring EC2, Linux, Docker, IAM, S3, and CloudWatch monitoring.
+        </p>
 
-            <!-- Made the entire card a semantic link wrapper for the live deployment -->
-            <a href="#" class="hero-card" style="text-decoration: none; color: inherit; display: block;">
-                <p class="live">● Live AWS Deployment</p>
-                <h2>Infrastructure Built</h2>
-                <p>
-                    Hosts a containerized application with automated infrastructure 
-                    provisioning and centralized cloud monitoring.
-                </p>
-            </a>
-        </section>
+        <div class="badges">
+          <span>Terraform</span>
+          <span>AWS EC2</span>
+          <span>Linux</span>
+          <span>Docker</span>
+          <span>CloudWatch</span>
+        </div>
 
-        <section class="summary">
-            <h2>Project Summary</h2>
-            <p>
-                This project demonstrates how modern cloud infrastructure can be deployed 
-                through Infrastructure as Code instead of manual configuration. The 
-                environment includes AWS networking, compute, security, monitoring, 
-                containerization, and Linux server administration.
-            </p>
-        </section>
+        <div class="hero-links">
+          <a href="#" target="_blank">Live Website</a>
+          <a href="https://github.com/Jose-Fernandezz/aws-cloud-infrastructure-project" target="_blank">GitHub Repository</a>
+          <a href="docs/architecture-diagram.png" target="_blank">Architecture Diagram</a>
+        </div>
+      </div>
 
-        <section class="cards">
-            <div class="card">
-                <h3>Infrastructure as Code</h3>
-                <p>Terraform was used to define and deploy AWS infrastructure ensuring consistent, repeatable deployments.</p>
-            </div>
+      <div class="hero-card">
+        <p class="live">● Live AWS Deployment</p>
+        <h2>Infrastructure Built</h2>
+        <p>
+          A cloud environment serving a live web application with secure networking, centralized monitoring, and automated infrastructure provisioning.
+        </p>
+      </div>
+    </section>
 
-            <div class="card">
-                <h3>AWS Networking</h3>
-                <p>Configured a VPC, public subnet, internet gateway, route table, and security group.</p>
-            </div>
+    <section class="summary">
+      <h2>Project Summary</h2>
+      <p>
+        This project showcases the design, deployment, and management of production-style AWS infrastructure using Infrastructure as Code. The environment includes AWS networking, compute, security, monitoring, containerization, and Linux administration.
+      </p>
+    </section>
 
-            <div class="card">
-                <h3>Compute & Hosting</h3>
-                <p>Deployed the application on an Amazon EC2 Linux server with public web access.</p>
-            </div>
+    <section class="cards">
+      <div class="card">
+        <div class="icon">&lt;/&gt;</div>
+        <h3>Infrastructure as Code</h3>
+        <p>Terraform was used to provision and version AWS resources through repeatable, declarative configuration files.</p>
+      </div>
 
-            <div class="card">
-                <h3>Monitoring</h3>
-                <p>Used Amazon CloudWatch to monitor EC2 infrastructure performance and health.</p>
-            </div>
-        </section>
+      <div class="card">
+        <div class="icon">⌘</div>
+        <h3>AWS Networking</h3>
+        <p>Configured a VPC, public subnet, internet gateway, route table, and security group.</p>
+      </div>
 
-        <section class="two-column">
-            <div>
-                <h2>Infrastructure Includes</h2>
-                <ul>
-                    <li>Amazon EC2 Linux Server</li>
-                    <li>Custom VPC</li>
-                    <li>Public Subnet</li>
-                    <li>Internet Gateway</li>
-                    <li>Route Table</li>
-                    <li>Security Group</li>
-                    <li>IAM Role</li>
-                    <li>Amazon S3</li>
-                    <li>Amazon CloudWatch</li>
-                </ul>
-            </div>
+      <div class="card">
+        <div class="icon">▤</div>
+        <h3>Compute & Hosting</h3>
+        <p>Deployed the application on an Amazon EC2 Linux server with public web access.</p>
+      </div>
 
-            <div>
-                <h2>Skills Demonstrated</h2>
-                <!-- Swapped repetitive tool tags out for high-level core engineering competencies -->
-                <div class="skills">
-                    <span>Infrastructure as Code (IaC)</span>
-                    <span>Cloud Security</span>
-                    <span>Network Architecture</span>
-                    <span>Containerization</span>
-                    <span>Linux Administration</span>
-                    <span>CI/CD Workflows</span>
-                    <span>Cloud Monitoring</span>
-                    <span>Identity & Access Management</span>
-                </div>
-            </div>
-        </section>
+      <div class="card">
+        <div class="icon">▥</div>
+        <h3>Monitoring</h3>
+        <p>Used Amazon CloudWatch to monitor EC2 infrastructure performance and health.</p>
+      </div>
+    </section>
 
-        <section class="process">
-            <h2>Deployment Process</h2>
+    <section class="two-column">
+      <div>
+        <h2>Infrastructure Includes</h2>
+        <ul>
+          <li>Amazon EC2 Linux Server</li>
+          <li>Custom VPC</li>
+          <li>Public Subnet</li>
+          <li>Internet Gateway</li>
+          <li>Route Table</li>
+          <li>Security Group</li>
+          <li>IAM Role</li>
+          <li>Amazon S3</li>
+          <li>Amazon CloudWatch</li>
+        </ul>
+      </div>
 
-            <div class="step">
-                <span>01</span>
-                <p>Designed the cloud architecture and networking layout.</p>
-            </div>
+      <div>
+        <h2>Skills Demonstrated</h2>
+        <div class="skills">
+          <span>Infrastructure as Code</span>
+          <span>Cloud Networking</span>
+          <span>Linux Administration</span>
+          <span>Containerization</span>
+          <span>Cloud Monitoring</span>
+          <span>Cloud Security</span>
+          <span>Automation</span>
+          <span>System Administration</span>
+          <span>Git Version Control</span>
+          <span>Troubleshooting</span>
+        </div>
+      </div>
+    </section>
 
-            <div class="step">
-                <span>02</span>
-                <p>Provisioned AWS resources using Terraform Infrastructure as Code.</p>
-            </div>
+    <section class="process">
+      <h2>Deployment Process</h2>
 
-            <div class="step">
-                <span>03</span>
-                <p>Configured EC2, Linux, security groups, and web access.</p>
-            </div>
+      <div class="step">
+        <span>01</span>
+        <p>Designed the cloud architecture and networking layout.</p>
+      </div>
 
-            <div class="step">
-                <span>04</span>
-                <p>Deployed the containerized application and verified public accessibility.</p>
-            </div>
+      <div class="step">
+        <span>02</span>
+        <p>Provisioned AWS resources using Terraform Infrastructure as Code.</p>
+      </div>
 
-            <div class="step">
-                <span>05</span>
-                <p>Documented the project with diagrams, screenshots, and GitHub README.</p>
-            </div>
-        </section>
+      <div class="step">
+        <span>03</span>
+        <p>Configured EC2, Linux, security groups, and public web access.</p>
+      </div>
 
-        <section class="outcome">
-            <h2>Final Outcome</h2>
-            <p>
-                This completed portfolio project demonstrates hands-on experience with AWS 
-                infrastructure deployment, Terraform automation, Linux administration, 
-                Docker containerization, monitoring, and technical documentation.
-            </p>
-        </section>
+      <div class="step">
+        <span>04</span>
+        <p>Deployed the production web application and validated public accessibility.</p>
+      </div>
 
-    </main>
+      <div class="step">
+        <span>05</span>
+        <p>Documented the project with architecture diagrams, screenshots, troubleshooting notes, and GitHub README documentation.</p>
+      </div>
+    </section>
+
+    <section class="outcome">
+      <h2>Final Outcome</h2>
+      <p>
+        This portfolio project demonstrates hands-on experience designing, deploying, and managing AWS cloud infrastructure using Infrastructure as Code. It highlights cloud networking, Linux administration, containerization, monitoring, automation, troubleshooting, and technical documentation.
+      </p>
+    </section>
+
+  </main>
 </body>
 </html>
