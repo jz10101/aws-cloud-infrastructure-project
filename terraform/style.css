@@ -1145,3 +1145,27 @@ img {
     }
 
 }
+
+
+.hero-architecture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.environment-card.environment-card-image {
+    width: 100%;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+}
+
+.environment-image {
+    width: 100%;
+    max-width: 850px;
+    height: auto;
+    display: block;
+    border-radius: 18px;
+    object-fit: contain;
+}
