@@ -2,6 +2,8 @@
 
 Production-style cloud infrastructure deployed on Amazon Web Services using **Terraform**, **Docker**, **Amazon EC2**, **Linux**, **IAM**, **S3**, and **CloudWatch**.
 
+Built as a production-style cloud infrastructure portfolio project to demonstrate Infrastructure as Code, AWS networking, containerization, monitoring, and cloud security best practices.
+
 > ## ⚠️ Important
 >
 > This project is hosted on an AWS EC2 instance that is normally **stopped** to minimize AWS costs.
@@ -205,6 +207,6 @@ This project demonstrates the ability to:
 
 **Jose Fernandez**
 
-Information Systems Student | Cloud & Infrastructure
+Information Systems Graduate | Cloud • Infrastructure • AWS
 
 Built as a portfolio project demonstrating AWS cloud infrastructure deployment using Infrastructure as Code.
